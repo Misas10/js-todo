@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Header {
+    font-size: 1.5rem;
+    min-height: 12vh;
+}
+
+body {
+    text-align: center;
+    color: white;
+    background-color: #212A3E;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input, form button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+form input {
+    min-width: 20%;
+    background-color: #F1F6F9;
+}
+
+form button {
+    min-width: 5%;
+    font-weight: bold;
+    color: white;
+    background-color: #85B6FF;
+    cursor: pointer;
+    transform: all 0.2s ease;
+}
+
+form button:hover {
+    background-color: #004dc0;
+}
+
+form {
+    min-height: 8vh;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 4%;
+    background-color: #F1F6F9;
+}
+
+.todo-list {
+    min-width: 60%;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13px 10px 13px;
+    border-radius: 5px;
+    margin-bottom: 0.8rem;
+    background-color: #394867;
+    font-size: 1.2rem;
+}
+
+.todoHeader {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item {
+    padding-left: 13px;
+    justify-content: space-between;
+}
+
+/* .todo:last-child { */
+/*     margin-left: auto; */
+/* } */
+
+.buttons-div {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.delete-btn, .edit-btn{
+    cursor: pointer;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    border: none;
+    background: transparent;
+}
+
+.edit-btn {
+    color: #85B6FF;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    color: #F24E1E;
+    margin-left: 5px;
+}
+
+.completed {
+    opacity: 0.5;
+}
+
+.completed > .todoHeader > .todo-item {
+    text-decoration: line-through;
+}
+
+.checkedIcon, .uncheckedIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.no-todos {
+    text-align: center;
+    font-size: 2rem;
+    color: #394867;
+}
